@@ -4,47 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
     crossorigin="anonymous"></script>
-    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="jquery-3.6.0.js">
     <script defer src="./tienda.js"></script>
     <script defer src="./constructor.js"></script>
     
-    <title>Tienda</title>
+    
+    <title>Skin - Productos cosméticos</title>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">Cosmética</a>
+    <nav class="navbar navbar-expand-lg navbar-light .bg-transparent pt-0">
+        <a class="navbar-brand" href="index.html"><img class="logo" src="img/Logo.png" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="index.html">Productos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#carrito">Carrito</a>
+              <a class="nav-link" href="info.html#form">Contacto</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="info.html">Información</a>
-              </li>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#carrito">Carrito</a>
+            </li>
           </ul>
+        </div>
+        <div class="justify-content-end icons">
+            <a href=""><img src="img/003-facebook.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/evenavaz/"><img src="img/004-instagram.png" alt="instagram"></a>
         </div>
       </nav>
 
     <header>
+        <img class="img-core" src="img/core.jpg" alt="">
         <div class="container title">
             <h1 class="text-center">TIENDA DE PRODUCTOS COSMÉTICOS</h1>
             <hr>
@@ -53,7 +60,7 @@
 
     <!-- START SECTION STORE -->
 
-    <section class="store">
+    <section class="store ml-4">
         <div class="container-fluid ml-5">
             <div class="items">
                 <div class="row">
@@ -95,7 +102,7 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row mb-5">
                     <div class="col-4">
                         <div class="item shadow mb-4">
                             <h3 class="item-title">Crema antiage</h3>
@@ -134,7 +141,7 @@
 
                 </div>
 
-                <div class="row">
+                <div class="row mb-5">
                     <div class="col-4">
                         <div class="item shadow mb-4">
                             <h3 class="item-title">Serum</h3>
@@ -159,11 +166,11 @@
                     </div>
                     <div class="col-4">
                         <div class="item shadow mb-4">
-                            <h3 class="item-title">Serum Mineral</h3>
+                            <h3 class="item-title">Protector Solar</h3>
 
-                            <img class="item-image" src="./img/mineral.jpg">
+                            <img class="item-image" src="./img/protectorsolar.webp">
                             <div class="item-details">
-                                <h4 class="item-price">$1399</h4>
+                                <h4 class="item-price">$2399</h4>
                                 <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
                             </div>
                         </div>
@@ -201,7 +208,7 @@
             <!-- ? END SHOPPING CART ITEMS -->
 
             <!-- START TOTAL -->
-            <div class="row">
+            <div id="cartera" class="row">
                 <div class="col-12">
                     <div class="shopping-cart-total d-flex align-items-center">
                         <p class="mb-0">Total</p>
@@ -224,7 +231,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- END TOTAL -->
 
             <!-- START MODAL COMPRA -->
@@ -248,26 +254,16 @@
                 </div>
             </div>
             <!-- END MODAL COMPRA -->
-
-
         </div>
-
     </section>
     <!-- END SECTION SHOPPING CART -->
 
 
     <!-- START FOOTER -->
-    <footer class="bg-dark p-3 mt-5">
-        <p class="text-center m-0 text-muted">Tienda de artículos cosméticos</p>
+    <footer class="bg-dark p-3 mt-5 text-center">
+        <p class=" m-0 text-muted">Tienda de artículos cosméticos</p>
+        <p class="text-muted">Copyright 2019. Todos los derechos reservados | Skin, Nuñez, C.A.B.A – BUENOS AIRES</p>
     </footer>
     <!-- END FOOTER -->
-
-
-
-
-
-
-
 </body>
-
 </html>

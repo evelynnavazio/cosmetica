@@ -1,80 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
-    <script defer src="./jquery.js"></script>
-    <script defer src="./tienda.js"></script>
-    <script defer src="./constructor.js"></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="jquery-3.6.0.js">
+  <script defer src="./tienda.js"></script>
+  <script defer src="./constructor.js"></script>
+  <script defer src="./jquery.js"></script>
+  
+  <title>Skin - Productos cosméticos</title> 
 </head>
 
 <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">Cosmética</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
+    <nav class="navbar navbar-expand-lg navbar-light .bg-transparent pt-0">
+      <a class="navbar-brand" href="index.html"><img class="logo" src="img/Logo.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse navbar" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="info.html#form">Contacto</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="info.html">Información</a>
+          </li>
+          <li class="nav-item">
               <a class="nav-link" href="index.html#carrito">Carrito</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="info.html">Información</a>
-              </li>
-          </ul>
-        </div>
-      </nav>
+          </li>
+        </ul>
+      </div>
+      <div class="justify-content-end icons">
+          <a href=""><img src="img/003-facebook.png" alt="facebook"></a>
+          <a href="https://www.instagram.com/evenavaz/"><img src="img/004-instagram.png" alt="instagram"></a>
+      </div>
+    </nav>
 <!--End Navbar-->
 
+<img class="bg-pink" src="img/wepik-2021828-155438.jpg" alt="">
+
+
+
 <div class="container mx-auto">
-
     <h1 class="text-center my-5">Información sobre productos cosméticos</h1>
+        <h4>¿Es seguro comprar en Skin?</h4>
+        <p>Es muy seguro comprar en Skin, contamos con altos estándares de seguridad según las buenas prácticas de los retails internacionales. Utilizamos servidores certificados, plataformas con estándares SSL (Secure Socket Layer) para realizar transacciones electrónicas seguras, lo que significa que toda tu información personal no podrá ser leída ni capturada por terceros mientras viaja por la red.</p>
+        <h4>¿Cómo obtengo mi factura?</h4>
+        <p>Luego de finalizar tu compra en farmaonline.com, te llegará un mail con los datos de tu pedido, dónde y cuándo retirar, y otro mail adjuntando al mismo la factura electrónica de la compra de acuerdo con la Res. General N°2975 de AFIP, sus modificatorias y complementarias.</p>
 
-        <p>1Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias est ratione cum ducimus doloribus sit earum libero. Veniam dolorem, sapiente sint blanditiis, maxime dolor amet tempora distinctio reprehenderit provident ab!</p>
-        <p>2Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos magnam ullam accusamus debitis eaque doloribus eum repellendus officia laborum delectus voluptatibus consequatur fugiat atque repudiandae ratione earum, voluptates esse placeat.</p>
+        <h4>¿Puede un tercero retirar mi pedido?</h4>
+        <p>Si, deberá acercarse con tu número de pedido y una copia de tu DNI en formato papel o digital.</p> 
 
-        <p id="texto-oculto" class="d-none">3Texto oculto</p>
+        <h4>¿Existe un monto mínimo de compa?</h4>
+        <p>Si, el monto mínimo es de $500 por transacción.</p>
 
+        <h4>Quiero cambiar el producto que compré, ¿puedo?</h4>
+        <p>Sí, claro que podés, siempre que tu cambio cumpla con las condiciones especificadas más abajo.</p>
+
+        <p id="texto-oculto"></p>
         <button class="btn btn-info my-4" id="btnjQuery">Leer más</button>
 
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In enim quos facere nobis exercitationem dolorum atque dignissimos ullam eum perspiciatis nulla porro accusantium labore at, sequi libero doloremque, nesciunt quidem.</p>
+        <p class="ver-menos">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In enim quos facere nobis exercitationem dolorum atque dignissimos ullam eum perspiciatis nulla porro accusantium labore at, sequi libero doloremque, nesciunt quidem.</p>
 
-        <button class="btn btn-info my-4" id="btnjQuery2">Seguir comprando</button>
-
+        <button class="btn btn-info my-4" id="btnjQuery2">Ver menos</button>
 </div>
+
 
 <!--Formulario-->
-
-<div class="form">
-  <h3 class="my-5 text-center">Formulario de contacto</h3>
-
-    <form id="form"> 
-      <div class="">
-        <input type="text" id="nombre" placeholder="Nombre y Apellido">
-        <input type="number" id="tel" placeholder="Teléfono">
-        <input type="text" class="mensaje" id="mensaje" placeholder="Su mensaje">
-        <button class="btn btn-info">Enviar</button>
+    <div class="container-fluid contenedor-form">
+      <div class="row justify-content-center">
+        <div class="col-6">
+          <div class="cuerpo-formulario">
+            <h3 class="text-center">Formulario de contacto</h3>
+              <form action="" method="post" id="form" class="formulario"> 
+               
+                  <label for="name"></label>
+                  <input type="text" id="nombre" placeholder="Nombre y Apellido" required>
+                  <br>
+                  <label for="email"></label>
+                  <input type="text" id="email" placeholder="Email" required>
+                  <br>
+                  <label for="tel"></label>
+                  <input type="number" id="tel" placeholder="Teléfono" required>
+                  <br>
+                  <textarea class="form-control" id="mensaje" rows="4"></textarea>
+                  <button type="submit" class="btn btn-info">Enviar</button>
+                
+              </form>
+            </div>
+        </div>
       </div>
-  </form>
-</div>
+    </div>
 
-</body>
+    <!-- START FOOTER -->
+    <footer class="bg-dark p-3 mt-5 text-center">
+      <p class=" m-0 text-muted">Tienda de artículos cosméticos</p>
+      <p class="text-muted">Copyright 2019. Todos los derechos reservados | Skin, Nuñez, C.A.B.A – BUENOS AIRES</p>
+  </footer>
+  <!-- END FOOTER -->
+
+
+
+  </body>
 </html>
