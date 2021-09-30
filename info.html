@@ -7,20 +7,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-  <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-  crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
   integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link rel="stylesheet" href="jquery-3.6.0.js">
-  <script defer src="./tienda.js"></script>
-  <script defer src="./constructor.js"></script>
-  <script defer src="./jquery.js"></script>
   
+
   <title>Skin - Productos cosméticos</title> 
+  <link rel="icon" href="img/Logo.png" type="image/icon type">
 </head>
 
 <body>
+  <div class="header-nav">
+    <span class="desc-header ">Descuentos lunes, martes y miércoles en con todos los medios de pago!</span>
+    <span class="envios-header ">Envios gratis a partir de $5000</span>
+</div>
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light .bg-transparent pt-0">
       <a class="navbar-brand" href="index.html"><img class="logo" src="img/Logo.png" alt="logo"></a>
@@ -49,8 +49,10 @@
       </div>
     </nav>
 <!--End Navbar-->
+<div class="contenedor-banner2">
+  <img class="bg-pink" src="img/wepik-2021828-155438.jpg" alt="banner-pink">
+</div>
 
-<img class="bg-pink" src="img/wepik-2021828-155438.jpg" alt="">
 
 
 
@@ -71,11 +73,18 @@
         <p>Sí, claro que podés, siempre que tu cambio cumpla con las condiciones especificadas más abajo.</p>
 
         <p id="texto-oculto"></p>
-        <button class="btn btn-info my-4" id="btnjQuery">Leer más</button>
+        <button class="btn btn-info my-4" id="btnjQuery">Ver promociones</button>
 
-        <p class="ver-menos">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In enim quos facere nobis exercitationem dolorum atque dignissimos ullam eum perspiciatis nulla porro accusantium labore at, sequi libero doloremque, nesciunt quidem.</p>
+        <p class="ver-menos">Consultanos por promociones con diferentes medios de pago. Aprovecha los descuentos de lunes a miércoles. Los jueves Woman tenes 20% de descuentos con tarjeta de crédito Santander.</p>
 
-        <button class="btn btn-info my-4" id="btnjQuery2">Ver menos</button>
+
+</div>
+
+
+
+<!--LLAMADO A JSON-->
+<div class="json">
+<p>Presione para el llamado a JSON</p>
 </div>
 
 
@@ -86,7 +95,6 @@
           <div class="cuerpo-formulario">
             <h3 class="text-center">Formulario de contacto</h3>
               <form action="" method="post" id="form" class="formulario"> 
-               
                   <label for="name"></label>
                   <input type="text" id="nombre" placeholder="Nombre y Apellido" required>
                   <br>
@@ -98,12 +106,15 @@
                   <br>
                   <textarea class="form-control" id="mensaje" rows="4"></textarea>
                   <button type="submit" class="btn btn-info">Enviar</button>
-                
               </form>
             </div>
         </div>
       </div>
     </div>
+
+
+
+
 
     <!-- START FOOTER -->
     <footer class="bg-dark p-3 mt-5 text-center">
@@ -111,8 +122,12 @@
       <p class="text-muted">Copyright 2019. Todos los derechos reservados | Skin, Nuñez, C.A.B.A – BUENOS AIRES</p>
   </footer>
   <!-- END FOOTER -->
-
-
-
+  <script src="jquery-3.5.1.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+  crossorigin="anonymous"></script>
+  <script defer src="./tienda.js"></script>
+  <script defer src="./constructor.js"></script>
+  <script defer src="./jquery.js"></script>
   </body>
 </html>

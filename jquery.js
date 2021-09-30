@@ -15,30 +15,35 @@ $('#form').on('submit',function(e){
 $("#texto-oculto").prepend('<h3  style="display: none" >Mas sobre cosmética</h3>');
 
 /*show*/
-$('#btnjQuery').on('click', () => {
-    $("h3").show(); 
-})
+
 
 /*hide*/
 $('#btnjQuery2').on('click', () => {
     $(".ver-menos").hide();  
 })
 
-//Declaramos la url del archivo JSON local
+
 const URLJSON = "users.json"
-//Agregamos un botón con jQuery
-$("body").prepend('<button id="btn1">JSON</button>');
-//Escuchamos el evento click del botón agregado
+
+$(".json").prepend('<button id="btn1">JSON</button>');
+
 $("#btn1").on('click',() => { 
 $.getJSON(URLJSON, function (respuesta, estado) {
     if(estado === "success"){
       let misDatos = respuesta;
       for (const dato of misDatos) {
-        $("body").prepend(`<div>
-                                <h3>${dato.name}</h3>
-                                <p> ${dato.email}</p>
+        $(".json").prepend(`<div>
+                                <h3>Nombre: ${dato.name}</h3>
+                                <p>Email:${dato.email}</p>
                             </div>`)
       }  
     }
     });
 });
+
+
+
+
+$('#btnjQuery').on('click', () => {
+    $(".ver-menos").toggle(); 
+})
