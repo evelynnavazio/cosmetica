@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="icon" href="img/Logo.png" type="image/icon type">
-    <title>Skin - Productos cosméticos</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+        <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/cb710176e8.js" crossorigin="anonymous"></script>
+        
+        <script defer src="./tienda.js"></script>
+        <script defer src="./constructor.js"></script>
+        <script defer src="./jquery.js"></script>
+        <script defer src="./info.js"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="https://genfavicon.com/tmp/icon_3ab4c6c20f96b221b34e1608ff62a946.ico" />
+        <title>Skin - Productos cosméticos</title>
+      </head>
 <body>
-
-<div class="header-nav">
-    <span class="desc-header ">Descuentos lunes, martes y miércoles en con todos los medios de pago!</span>
-    <span class="envios-header ">Envios gratis a partir de $5000</span>
-</div>
-
-
 
     <nav class="navbar navbar-expand-lg navbar-light .bg-transparent pt-0">
         <a class="navbar-brand" href="index.html"><img class="logo" src="img/Logo.png" alt="logo"></a>
@@ -32,13 +38,13 @@
               <a class="nav-link" href="index.html">Productos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="info.html#form">Contacto</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" href="info.html">Información</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#carrito">Carrito</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ofertas.html">Ofertas</a>
             </li>
           </ul>
         </div>
@@ -49,9 +55,13 @@
       </nav>
 
     <header>
-        <img class="img-core" src="img/core.jpg" alt="">
+        <div class="container-banner">
+            <img class="img-core" id="scroll-banner" src="img/core.jpg" alt="corazones rosados">
+            <div class="banner-center" id="scroll-banner-text">LAS MEJORES MARCAS DE PRODUCTOS COSMÉTICOS ESTÁN EN SKIN</div>
+        </div>
+
         <div class="container title">
-            <h1 class="text-center">TIENDA DE PRODUCTOS COSMÉTICOS</h1>
+            <h1 class="text-center title-margin">TIENDA DE PRODUCTOS COSMÉTICOS</h1>
             <hr>
         </div>
     </header>
@@ -100,7 +110,7 @@
                     </div>
                 </div>
 
-                <div class="row mb-5">
+                <div class="row">
                     <div class="col-4">
                         <div class="item shadow mb-4">
                             <h3 class="item-title">Crema antiage</h3>
@@ -136,10 +146,9 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
 
-                <div class="row mb-5">
+                <div class="row">
                     <div class="col-4">
                         <div class="item shadow mb-4">
                             <h3 class="item-title">Serum</h3>
@@ -180,8 +189,8 @@
     <!-- END SECTION STORE -->
     <!-- START SECTION SHOPPING CART -->
     <section class="shopping-cart">
-        <div class="container">
-            <h1 class="text-center" id="carrito">CARRITO</h1>
+        <div class="container content-pay">
+            <h1 class="text-center title-margin" id="carrito">CARRITO</h1>
             <hr>
             <div class="row">
                 <div class="col-6">
@@ -205,6 +214,8 @@
             </div>
             <!-- ? END SHOPPING CART ITEMS -->
 
+
+
             <!-- START TOTAL -->
             <div id="cartera" class="row">
                 <div class="col-12">
@@ -224,7 +235,7 @@
                                 Se aumentó correctamente la cantidad
                             </div>
                         </div>
-                        <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                        <button class="btn btn-primary ml-auto comprarButton" type="button" data-toggle="modal"
                             data-target="#comprarModal">Comprar</button>
                     </div>
                 </div>
@@ -257,19 +268,69 @@
     <!-- END SECTION SHOPPING CART -->
 
 
-    <!-- START FOOTER -->
-    <footer class="bg-dark p-3 mt-5 text-center">
-        <p class=" m-0 text-muted">Tienda de artículos cosméticos</p>
-        <p class="text-muted">Copyright 2019. Todos los derechos reservados | Skin, Nuñez, C.A.B.A – BUENOS AIRES</p>
-    </footer>
-    <!-- END FOOTER -->
+<!-- START FOOTER -->
+<footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Skin</h4>
+          <ul>
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Nuestros servicios</a></li>
+            <li><a href="#">Politicas de privacidad</a></li>
+            <li><a href="#">Programa de afiliación</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Centro de ayuda</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Envío</a></li>
+            <li><a href="#">Devoluciones</a></li>
+            <li><a href="#">Estado de compra</a></li>
+            <li><a href="#">Métodos de pago</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>online shop</h4>
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="info.html">info</a></li>
+            <li><a href="index.html#carrito">carrito</a></li>
+            <li><a href="#">ofertas</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Seguinos</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <div class="container-fluid contenedor-form">
+              <div class="row justify-content-center">
+                <div class="cuerpo-formulario">
+                  <h3 class="text-center footer-title">Suscribite a nuestro newsletter</h3>
+                    <form action="" method="post" id="form" class="formulario"> 
+                      <label for="name"></label>
+                        <input type="text" id="nombre" placeholder="Nombre" required>
+                      
+                        <label for="email"></label>
+                        <input type="text" id="email" placeholder="Email" required>
+                      
+                        <button type="submit" class="btn btn-info">Enviar</button>
+                      </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!--Formulario-->
+      </div>
+    </div>
+ </footer>
+<!-- END FOOTER -->
 
-
-<script src="jquery-3.5.1.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-crossorigin="anonymous"></script>
-<script defer src="./tienda.js"></script>
-<script defer src="./constructor.js"></script>    
+    
 </body>
 </html>

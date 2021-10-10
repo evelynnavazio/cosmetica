@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": "Agua micelar",
+    "price": "3199",
+    "units": "2500",
+    "amount": "20 ml"
+  },
+  {
+    "id": 2,
+    "title": "Agua termal",
+    "price": "2199",
+    "units": "200",
+    "amount": "50 ml"
+  },
+  {
+    "id": 3,
+    "title": "Corrector",
+    "price": "1199",
+    "units": "150",
+    "amount": "15 ml"
+  },
+  {
+    "id": 4,
+    "title": "Crema antiage",
+    "price": "1799",
+    "units": "100",
+    "amount": "105 ml"
+  },
+  {
+    "id": 5,
+    "title": "Dermasolución crema",
+    "price": "3199",
+    "units": "110",
+    "amount": "250 ml"
+  },
+  {
+    "id": 6,
+    "title": "Crema de ojos concentrada",
+    "price": "2199",
+    "units": "10",
+    "amount": "20 ml"
+  },
+  {
+    "id": 7,
+    "title": "Serum",
+    "price": "1399",
+    "units": "236",
+    "amount": "23 ml"
+  },
+  {
+    "id": 8,
+    "title": "Serum mineral",
+    "price": "3399",
+    "units": "5",
+    "amount": "30 ml"
+  },
+  {
+    "id": 9,
+    "title": "Protector solar",
+    "price": "1199",
+    "units": "100",
+    "amount": "100 ml"
+  }
+]
